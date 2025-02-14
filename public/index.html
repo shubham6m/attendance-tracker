@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Attendance System</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="light">
+  <div style="position:absolute;top:10px;right:10px;">
+    <input type="checkbox" class="checkbox" id="checkbox">
+      <label for="checkbox" class="checkbox-label">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <span class="ball"></span>
+      </label>
+   </div>
+
+    <div class="container">
+        <h1>Welcome to KPB Supports Solutions</h1>
+        <h4>Employee Attendance System</h4>
+        <div id="loginOptions" class="login-options">
+            <button id="employeeLoginBtn">Login as Employee</button>
+        </div>
+        <div id="employeeForm" class="hidden">
+         <h2>Employee Login</h2>
+          <form id="attendanceForm">
+            <div class="form-group">
+                <label for="employeeId">Employee ID*:</label>
+                <input type="text" id="employeeId" required>
+            </div>
+            <div class="form-group">
+                <label for="fullName">Full Name*:</label>
+                <input type="text" id="fullName" required>
+            </div>
+                 <div class="form-group">
+                    <label for="tasks">Today's Tasks:</label>
+                   <textarea id="tasks" rows="4"></textarea>
+                </div>
+                <div class="button-group">
+                <button type="button" id="punchIn">Punch In</button>
+                <button type="button" id="punchOut">Punch Out</button>
+                </div>
+            </form>
+            <div id="statusMessage" class="message"></div>
+
+                <p class="liw">Connect with us on</p>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/company/kpbsupportssolutions/"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://www.facebook.com/people/KPB-Solutions/61552608755485/"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.instagram.com/kpbsupportssolutions/"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://x.com/Kpbssolutions"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="https://www.youtube.com/@KPBSupportsSolutions"><ion-icon name="logo-youtube"></ion-icon></a>
+                </div>
+
+       </div>
+    </div>
+   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
