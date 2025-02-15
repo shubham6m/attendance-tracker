@@ -18,7 +18,8 @@ app.get('/', (req, res) => {
 });
  // Set up Google Sheets API client
  const sheets = google.sheets({version: 'v4'});
- const SPREADSHEET_ID = '1pySIWHFMb30sjMIMkL0XUJdVx_P1RSPAtwHbfh3_fFI'; // Replace with your actual Spreadsheet ID
+const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
+//  const SPREADSHEET_ID = '1pySIWHFMb30sjMIMkL0XUJdVx_P1RSPAtwHbfh3_fFI'; // Replace with your actual Spreadsheet ID
  // Authentication
  const auth = new google.auth.GoogleAuth({
     credentials: JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS),
