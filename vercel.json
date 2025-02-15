@@ -12,8 +12,4 @@
       "dest": "/app.js"
     }
   ],
-  "env": {
-    "GOOGLE_APPLICATION_CREDENTIALS": "@google_application_credentials",
-    "SPREADSHEET_ID": "1pySIWHFMb30sjMIMkL0XUJdVx_P1RSPAtwHbfh3_fFI"
-  }
 }
